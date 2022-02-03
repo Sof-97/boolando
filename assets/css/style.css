@@ -1,0 +1,88 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: lightgrey;
+}
+
+/*  Strutture riusabili */
+
+
+.card{
+    display: inline-block;
+}
+
+.product{
+    background-size: cover;
+    height: 400px;
+    width: 280px;
+}
+
+.info{
+    background-color: crimson;
+    width: 280px;
+    height: 25px;
+}
+
+.liked::before{
+    content: "\2665";
+}
+
+
+
+/*  Selettori specifici  */
+
+/*  Hover  */
+
+.uno{
+    background-image: url(../img/1.webp);
+}
+
+.product.uno:hover{
+    background-image: url(../img/1b.webp);
+}
+
+.due{
+    background-image: url(../img/2.webp);
+}
+
+.product.due:hover{
+    background-image: url(../img/2b.webp);
+}
+
+.tre{
+    background-image: url(../img/3.webp);
+}
+
+.product.tre:hover{
+    background-image: url(../img/3b.webp);
+}
+
+.quattro{
+    background-image: url(../img/4.webp);
+}
+
+.product.quattro:hover{
+    background-image: url(../img/4b.webp);
+}
+
+.cinque{
+    background-image: url(../img/5.webp);
+
+}
+
+.product.cinque:hover{
+    background-image: url(../img/5b.webp);
+}
+
+.sei{
+    background-image: url(../img/6.webp);
+}
+
+.product.sei:hover{
+    background-image: url(../img/6b.webp);
+}

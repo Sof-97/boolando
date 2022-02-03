@@ -3,38 +3,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
 }
 
 main{
-    background-color: lightgrey;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 25px;
 }
 
 /*  Strutture riusabili */
 
+.bg-white{
+    background-color: #ffffff;
+}
 
-.card{
+.mg-lr {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.mg-top{
+    margin-top: 3px;
+}
+
+.disib{
     display: inline-block;
+}
+
+.prel{
+    position: relative;
+}
+
+/*  Selettori specifici  */
+
+.liked{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    top: 3%;
+    vertical-align: middle;
+    line-height: 25px;
 }
 
 .product{
     background-size: cover;
     height: 400px;
     width: 280px;
-}
-
-.info{
-    background-color: crimson;
-    width: 280px;
-    height: 25px;
+    text-align: center;
+    position: relative;
 }
 
 .liked::before{
     content: "\2665";
 }
 
+.row{
+    margin-top: 5px;    
+}
+
+.brand{
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+h5{
+    font-size: 0.7em;
+}
+
+.price{
+    font-size: 0.8em;
+    color: #eb0037;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.notdiscounted{
+    color: grey;
+    font-size: 0.6em;
+    text-decoration-line: line-through;
+}
 
 
-/*  Selettori specifici  */
 
 /*  Hover  */
 

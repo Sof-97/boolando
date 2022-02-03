@@ -39,12 +39,21 @@ main{
     position: relative;
 }
 
+.tag{
+    color: #ffffff;
+    font-size: 0.7em;
+    padding: 2px;
+}
+
+.pabs{
+    position: absolute;
+}
+
 /*  Selettori specifici  */
 
 .liked{
     width: 25px;
     height: 25px;
-    position: absolute;
     right: 0px;
     top: 3%;
     vertical-align: middle;
@@ -89,7 +98,21 @@ h5{
     text-decoration-line: line-through;
 }
 
+.discount{
+    background-color: #eb0037;
+    left: 0px;
+    bottom: 3%;
+}
 
+.green{
+    background-color: #00875a;
+    right: 65%;
+    bottom: 3%;
+}
+
+.only{
+    left: 0px;
+}
 
 /*  Hover  */
 

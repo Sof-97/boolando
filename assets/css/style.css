@@ -43,10 +43,20 @@ main{
     color: #ffffff;
     font-size: 0.7em;
     padding: 2px;
+    left: 0px;
+    bottom: 3%;
 }
 
 .pabs{
     position: absolute;
+}
+
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
 }
 
 /*  Selettori specifici  */
@@ -62,7 +72,6 @@ main{
 
 .product{
     background-size: cover;
-    height: 400px;
     width: 280px;
     text-align: center;
     position: relative;
@@ -97,70 +106,85 @@ h5{
     font-size: 0.6em;
     text-decoration-line: line-through;
 }
+/* Usare tag <del></del> */
 
 .discount{
     background-color: #eb0037;
-    left: 0px;
-    bottom: 3%;
 }
 
 .green{
     background-color: #00875a;
-    right: 65%;
-    bottom: 3%;
-}
-
-.only{
-    left: 0px;
 }
 
 /*  Hover  */
 
+/* Soluzione con background */
+/* 
 .uno{
     background-image: url(../img/1.webp);
-}
-
-.product.uno:hover{
-    background-image: url(../img/1b.webp);
 }
 
 .due{
     background-image: url(../img/2.webp);
 }
 
-.product.due:hover{
-    background-image: url(../img/2b.webp);
-}
-
 .tre{
     background-image: url(../img/3.webp);
-}
-
-.product.tre:hover{
-    background-image: url(../img/3b.webp);
 }
 
 .quattro{
     background-image: url(../img/4.webp);
 }
 
-.product.quattro:hover{
-    background-image: url(../img/4b.webp);
-}
-
 .cinque{
     background-image: url(../img/5.webp);
-
-}
-
-.product.cinque:hover{
-    background-image: url(../img/5b.webp);
 }
 
 .sei{
     background-image: url(../img/6.webp);
 }
 
+.product.uno:hover{
+    background-image: url(../img/1b.webp);
+}
+
+
+.product.due:hover{
+    background-image: url(../img/2b.webp);
+}
+
+
+
+.product.tre:hover{
+    background-image: url(../img/3b.webp);
+}
+
+
+.product.quattro:hover{
+    background-image: url(../img/4b.webp);
+}
+
+
+.product.cinque:hover{
+    background-image: url(../img/5b.webp);
+}
+
+
 .product.sei:hover{
     background-image: url(../img/6b.webp);
+} */
+
+
+/* Soluzione cambio display immagine */
+
+.product img{
+    width: 100%;
+}
+
+.product:hover img:nth-of-type(1){
+    display: none;
+}
+
+.product:hover img:nth-of-type(2){
+    display: block;
 }

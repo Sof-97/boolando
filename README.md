@@ -1,1 +1,2 @@
-# html-css-boolando
+## Boolando
+A simple shop landing page mock-up.
